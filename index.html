@@ -79,7 +79,7 @@
                               <div style="text-align:center">
                                   <br><br>
                                   <ul style="list-style-type:none;">
-                                      <li> <button class="button" onclick="playPause()">Play/Pause</button></li>
+                                      <li> <button class="button" onclick="playPause1()">Play/Pause</button></li>
                                       <li> <br><br><p>Roll a ball game - unity</p></li>
                                       <li><a target="_blank" href="https://github.com/OfekDinisman/Unity-Project-roll-a-ball">Click to view the code<span class="icon-github"></span></a></li>
                                       <li>
@@ -94,11 +94,11 @@
                               <div style="text-align:center">
                                   <br><br>
                                   <ul style="list-style-type:none;">
-                                      <li><button class="button" onclick="playPause()">Play/Pause</button></li>
+                                      <li><button class="button" onclick="playPause2()">Play/Pause</button></li>
                                       <li> <br><br><p>Escape Room game in VR - unity</p></li>
                                       <li><a target="_blank" href="https://github.com/OfekDinisman/Unity-Project-EscapeRoom1">Click to view the code<span class="icon-github"></span></a></li>
                                       <li>
-                                          <video id="video1" width="420">
+                                          <video id="video2" width="420">
                                               <source src="videos/movieEscapeRoom1.mp4" type="video/mp4">
                                               Your browser does not support HTML video.
                                           </video>
@@ -523,26 +523,22 @@
           </main>
       </div> <!-- .site-wrap -->
       <script>
-          var myVideo = document.getElementById("video1");
 
-          function playPause() {
+          function playPause1() {
+              var myVideo = document.getElementById("video1");
               if (myVideo.paused)
                   myVideo.play();
               else
                   myVideo.pause();
           }
-
-          function makeBig() {
-              myVideo.width = 560;
+          function playPause2() {
+              var myVideo = document.getElementById("video2");
+              if (myVideo.paused)
+                  myVideo.play();
+              else
+                  myVideo.pause();
           }
-
-          function makeSmall() {
-              myVideo.width = 320;
-          }
-
-          function makeNormal() {
-              myVideo.width = 420;
-          }
+          
       </script>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/jquery-migrate-3.0.1.min.js"></script>
